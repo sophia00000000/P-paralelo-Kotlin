@@ -26,8 +26,7 @@ fun sumList(numbers: List<Int>): Int {
     return sum
 }
 fun main() {
-    val numbers = List(1_000_000) { (1..10).random() }
-
+    val numbers = List(1_000_000_000) { (1..10).random() }
     // Tiempo sin paralelo
     val timeOriginal = measureTimeMillis {
         println("Suma secuencial: ${sumList(numbers)}")
